@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIO_DATA</title>
+    <style>
+        body {
+            background-color: White;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 70%;
+            margin: auto;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+        .form-group {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        input, select {
+            width: 60%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+        .radio-group, .checkbox-group {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .my-button {
+            display: block;
+            width: 50%;
+            margin: auto;
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .my-button:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bio Data Form</h1>
+        <form>
+            <div class="form-group">
+                <b>NAME:</b> <input type="text">
+            </div>
+            <div class="form-group">
+                <b>Father's Name:</b> <input type="text">
+            </div>
+            <div class="form-group">
+                <b>Mother's Name:</b> <input type="text">
+            </div>
+            <div class="form-group">
+                <b>Date of Birth:</b> <input type="date">
+            </div>
+            <div class="form-group">
+                <b>Phone:</b> <input type="tel" maxlength="11">
+            </div>
+            <div class="form-group radio-group">
+                <b>Gender:</b>
+                <input type="radio" name="gender" value="M">Male
+                <input type="radio" name="gender" value="F"checked >Female
+            </div>
+            <div class="form-group">
+                <b>Status:</b>
+                <select>
+                    <option>Single</option>
+                    <option>Married</option>
+                </select>
+            </div>
+            <div class="form-group checkbox-group">
+                <b>Languages Known:</b>
+                <input type="checkbox">Tagalog
+                <input type="checkbox">English
+                <input type="checkbox">Korean
+            </div>
+            <div class="form-group">
+                <b>Education:</b>
+                <select>
+                    <option>Graduation</option>
+                    <option selected>Under Graduation</option>
+                </select>
+            </div>
+            <div class="form-group checkbox-group">
+                <b>Skills:</b>
+                <input type="checkbox">HTML
+                <input type="checkbox">SQL
+                <input type="checkbox">Java
+            </div>
+            <div class="form-group">
+                <b>Address:</b>
+                <select>
+                    <option>Alos</option>
+                    <option selected>Amandiego</option>
+                    <option>Amangbangan</option>
+                    <option>Balangobong</option>
+                    <option 
+                    >Balayang</option>
+                    <option>Bisocol</option>
+                    <option>Bued</option>
+                    <option>Cayucay</option>
+                    <option>Dulacac</option>
+                    <option>Landoc</option>
+                    <option>Lucap</option>
+                    <option>Maawi</option>
+                    <option>Polo</option>
+                    <option>San Antonio</option>
+                    <option>Victoria</option>
+                  
+         
+            </div>
+            <div class="form-group">
+                <b>Nationality:</b>
+                <select>
+                    <option>Filipino</option>
+                    <optionselected>Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <b>Religion:</b>
+                <select>
+                    <option>Roman Catholic</option>
+                    <option>Jehovah's Witness</option>
+                </select>
+            </div>
+            <button class="my-button">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
